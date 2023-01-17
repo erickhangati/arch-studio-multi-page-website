@@ -1,17 +1,17 @@
 // Portfolio Details
 
-import card1Image from "../../assets/images/Portfolio/image-seraph.jpg";
-import card2Image from "../../assets/images/Portfolio/image-eebox.jpg";
-import card3Image from "../../assets/images/Portfolio/image-federal.jpg";
-import card4Image from "../../assets/images/Portfolio/image-del-sol.jpg";
-import card5Image from "../../assets/images/Portfolio/image-prototype.jpg";
-import card6Image from "../../assets/images/Portfolio/image-228b.jpg";
-import card7Image from "../../assets/images/Portfolio/image-edelweiss.jpg";
-import card8Image from "../../assets/images/Portfolio/image-netcry.jpg";
-import card9Image from "../../assets/images/Portfolio/image-hypers.jpg";
-import card10Image from "../../assets/images/Portfolio/image-sxiv.jpg";
-import card11Image from "../../assets/images/Portfolio/image-trinity.jpg";
-import card12Image from "../../assets/images/Portfolio/image-paramour.jpg";
+import card1Image from "../../assets/images/portfolio/image-seraph.jpg";
+import card2Image from "../../assets/images/portfolio/image-eebox.jpg";
+import card3Image from "../../assets/images/portfolio/image-federal.jpg";
+import card4Image from "../../assets/images/portfolio/image-del-sol.jpg";
+import card5Image from "../../assets/images/portfolio/image-prototype.jpg";
+import card6Image from "../../assets/images/portfolio/image-228b.jpg";
+import card7Image from "../../assets/images/portfolio/image-edelweiss.jpg";
+import card8Image from "../../assets/images/portfolio/image-netcry.jpg";
+import card9Image from "../../assets/images/portfolio/image-hypers.jpg";
+import card10Image from "../../assets/images/portfolio/image-sxiv.jpg";
+import card11Image from "../../assets/images/portfolio/image-trinity.jpg";
+import card12Image from "../../assets/images/portfolio/image-paramour.jpg";
 
 const portfolioDetails = [
   {
