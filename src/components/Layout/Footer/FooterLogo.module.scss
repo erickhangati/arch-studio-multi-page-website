@@ -1,0 +1,8 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.icon {
+  @include mixins.respond(tablet) {
+    width: 5.8rem;
+    height: auto;
+  }
+}

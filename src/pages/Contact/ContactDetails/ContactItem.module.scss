@@ -1,0 +1,60 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact-details {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+
+  @include mixins.respond(tablet) {
+    grid-template-columns: 1fr 0.8fr;
+  }
+
+  @include mixins.respond(phone-lg) {
+    grid-template-columns: 1fr;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__button {
+    margin-top: 2rem;
+    background: none;
+    padding: 0;
+    padding-bottom: 0.8rem;
+    justify-self: start;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      background: none;
+      border-bottom: 1px solid var(--very-dark-blue);
+    }
+
+    & span {
+      color: var(--very-dark-blue);
+    }
+
+    & svg path {
+      stroke: var(--very-dark-blue);
+    }
+
+    @include mixins.respond(tablet) {
+      justify-self: end;
+      align-self: end;
+    }
+
+    @include mixins.respond(phone-lg) {
+      margin-top: 1rem;
+      justify-self: start;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.contact-map {
+  width: 100%;
+  height: 56rem;
+  margin-top: 15rem;
+
+  @include mixins.respond(tablet) {
+    margin-top: 12rem;
+  }
+
+  @include mixins.respond(phone-lg) {
+    margin-top: 8rem;
+  }
+}

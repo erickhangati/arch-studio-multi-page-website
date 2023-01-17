@@ -1,0 +1,38 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.hero {
+  & h1 {
+    left: -20rem;
+
+    @include mixins.respond(tablet) {
+      left: 15rem;
+    }
+  }
+
+  & hr {
+    @include mixins.respond(laptop) {
+      left: 6.5rem;
+    }
+
+    @include mixins.respond(tablet) {
+      top: 8rem;
+      left: 5.5rem;
+      display: none;
+    }
+  }
+
+  &__image {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/src/assets/images/contact/image-hero.jpg");
+  }
+
+  &__text {
+    @include mixins.respond(laptop) {
+      left: 40%;
+    }
+
+    @include mixins.respond(phone-lg) {
+      left: 49%;
+    }
+  }
+}

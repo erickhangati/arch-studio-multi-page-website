@@ -1,0 +1,70 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.featured-card {
+  height: 56rem;
+  padding: 4rem;
+  position: relative;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include mixins.respond(laptop) {
+    padding: 3rem;
+    height: 44rem;
+  }
+
+  @include mixins.respond(tablet) {
+    height: 24rem;
+    padding: 4rem;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+
+  @include mixins.respond(phone-lg) {
+    padding: 2.4rem;
+  }
+
+  & h4 {
+    @include mixins.respond(laptop) {
+      font-size: 2.8rem;
+    }
+
+    @include mixins.respond(tablet) {
+      font-size: 3.2rem;
+    }
+  }
+
+  & h4 {
+    line-height: 3rem;
+  }
+
+  & h4,
+  & p {
+    color: white;
+  }
+
+  & span {
+    position: absolute;
+    top: 14rem;
+    right: -1.4rem;
+    font-size: 25rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+
+    @include mixins.respond(laptop) {
+      font-size: 20rem;
+      top: 10rem;
+    }
+
+    @include mixins.respond(tablet) {
+      right: 1rem;
+    }
+
+    @include mixins.respond(phone-lg) {
+      display: none;
+    }
+  }
+}

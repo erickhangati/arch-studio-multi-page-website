@@ -1,0 +1,94 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.welcome {
+  margin-top: 10.8rem;
+
+  @include mixins.respond(laptop) {
+    margin-top: 10rem;
+  }
+
+  @include mixins.respond(tablet) {
+    margin-top: 4.2rem;
+  }
+
+  @include mixins.respond(phone-lg) {
+    margin-top: 10rem;
+    padding: 0 8.5%;
+  }
+
+  & h1 {
+    z-index: 10;
+    position: relative;
+
+    @include mixins.respond(laptop) {
+      font-size: 18rem;
+    }
+
+    @include mixins.respond(tablet) {
+      font-size: 12rem;
+      font-weight: 500;
+    }
+
+    @include mixins.respond(phone-lg) {
+      display: none;
+    }
+  }
+
+  &__description {
+    margin-top: -13.2rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12.5rem;
+
+    @include mixins.respond(laptop) {
+      gap: 8rem;
+      margin-top: -8.5rem;
+    }
+
+    @include mixins.respond(tablet) {
+      margin-top: -3rem;
+    }
+
+    & img {
+      @include mixins.respond(tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    width: 44.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4.3rem;
+    align-self: flex-end;
+
+    @include mixins.respond(tablet) {
+      width: 100%;
+    }
+
+    @include mixins.respond(phone-lg) {
+      gap: 2.2rem;
+    }
+
+    & h3 {
+      @include mixins.respond(laptop) {
+        font-size: 6rem;
+        line-height: 5.5rem;
+      }
+
+      @include mixins.respond(phone-lg) {
+        font-size: 4.8rem;
+        line-height: 5.2rem;
+        letter-spacing: -1.71 px;
+      }
+    }
+
+    &-paragraphs {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}

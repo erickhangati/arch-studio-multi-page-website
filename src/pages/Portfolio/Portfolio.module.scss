@@ -1,0 +1,20 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+
+  @include mixins.respond(tablet) {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
+
+  @include mixins.respond(phone-lg) {
+    padding: 0 8.5%;
+  }
+
+  &__card span {
+    display: none;
+  }
+}

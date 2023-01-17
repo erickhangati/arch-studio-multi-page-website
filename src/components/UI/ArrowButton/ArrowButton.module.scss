@@ -1,0 +1,19 @@
+.arrow-button {
+  width: 8rem;
+  height: 8rem;
+  background-color: var(--very-dark-blue);
+  border: 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--dark-grey);
+  }
+
+  &:active {
+    background-color: var(--light-grey);
+  }
+}

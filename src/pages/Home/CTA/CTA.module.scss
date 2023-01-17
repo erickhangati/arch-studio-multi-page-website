@@ -1,0 +1,51 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.cta {
+  width: 100%;
+  height: 56rem;
+  margin-top: 20rem;
+  padding-top: 16.7rem;
+  padding-left: 19rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/assets/images/image-small-team.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include mixins.respond(laptop) {
+    padding-left: 10rem;
+    margin-top: 16rem;
+  }
+
+  @include mixins.respond(tablet) {
+    padding-left: 5.8rem;
+    margin-top: 12rem;
+  }
+
+  @include mixins.respond(phone-lg) {
+    padding-top: 18.1rem;
+    padding-left: 3.2rem;
+    margin-top: 8rem;
+  }
+
+  & div {
+    width: 44.5rem;
+    height: 22.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.7rem;
+
+    @include mixins.respond(phone-lg) {
+      width: 31.1rem;
+    }
+  }
+
+  & h3 {
+    color: white;
+
+    @include mixins.respond(phone-lg) {
+      font-size: 4.8rem;
+    }
+  }
+}

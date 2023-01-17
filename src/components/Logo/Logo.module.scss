@@ -1,0 +1,8 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.logo {
+  @include mixins.respond(phone-lg) {
+    width: 7.7rem;
+    height: auto;
+  }
+}

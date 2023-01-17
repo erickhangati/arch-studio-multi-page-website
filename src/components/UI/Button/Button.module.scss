@@ -1,0 +1,29 @@
+.button {
+  border: 0;
+  background-color: var(--very-dark-blue);
+  padding: 2.6rem;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+
+  &:hover {
+    --dark-grey: #60636d;
+    background-color: var(--dark-grey);
+  }
+
+  &:active {
+    --dark-grey: #60636d;
+    background-color: var(--light-grey);
+  }
+
+  & span {
+    color: white;
+    font-weight: 700;
+  }
+}

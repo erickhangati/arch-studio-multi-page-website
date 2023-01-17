@@ -1,0 +1,8 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.hero {
+  &__image {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/src/assets/images/about/image-hero.jpg");
+  }
+}

@@ -1,0 +1,70 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.featured {
+  margin-top: 20rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+
+  @include mixins.respond(laptop) {
+    margin-top: 15rem;
+  }
+
+  @include mixins.respond(tablet) {
+    margin-top: 13rem;
+  }
+
+  @include mixins.respond(phone-lg) {
+    margin-top: 7.3rem;
+    padding: 0 8.5%;
+    gap: 2.4rem;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & h3 {
+      @include mixins.respond(phone-lg) {
+        font-size: 4.8rem;
+      }
+    }
+
+    & button {
+      @include mixins.respond(phone-lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+
+    @include mixins.respond(tablet) {
+      margin-top: 2rem;
+      grid-template-columns: 1fr;
+      row-gap: 2.4rem;
+    }
+
+    @include mixins.respond(phone-lg) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__mobile-button {
+    display: none;
+
+    & button {
+      width: 100%;
+    }
+
+    @include mixins.respond(phone-lg) {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.number-button {
+  width: 8rem;
+  height: 8rem;
+  background-color: white;
+  color: var(--medium-grey);
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @include mixins.respond(phone-lg) {
+    background-color: var(--very-light-grey);
+  }
+
+  &:hover {
+    background-color: var(--very-light-grey);
+  }
+}

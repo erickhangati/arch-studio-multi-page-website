@@ -1,0 +1,9 @@
+@use "../../../../styles/mixins.scss" as mixins;
+
+.mobile-menu {
+  display: none;
+
+  @include mixins.respond(phone-lg) {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,105 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+.header {
+  padding: 5.6rem 11%;
+
+  display: flex;
+  align-items: center;
+  gap: 9.5rem;
+
+  @include mixins.respond(tablet) {
+    padding: 5.2rem 11%;
+    gap: 8rem;
+  }
+
+  @include mixins.respond(phone-lg) {
+    padding: 3.2rem;
+    justify-content: space-between;
+  }
+
+  & svg {
+    cursor: pointer;
+  }
+
+  &__breadcrumb {
+    display: flex;
+    flex: 1;
+    gap: 6.4rem;
+    align-items: center;
+    transform: rotate(90deg);
+    position: absolute;
+    color: var(--light-grey);
+
+    &--home {
+      top: 13rem;
+      left: -5.1%;
+
+      @include mixins.respond(laptop) {
+        left: -8.8%;
+      }
+
+      @include mixins.respond(tablet) {
+        top: 12.3rem;
+        left: -13.8%;
+      }
+    }
+
+    &--portfolio {
+      top: 19.5rem;
+      left: -10%;
+
+      @include mixins.respond(laptop) {
+        left: -15.3%;
+      }
+
+      @include mixins.respond(tablet) {
+        top: 18.9rem;
+        left: -22.5%;
+      }
+    }
+
+    &--about {
+      top: 14.2rem;
+      left: -6%;
+
+      @include mixins.respond(laptop) {
+        left: -10.1%;
+      }
+
+      @include mixins.respond(tablet) {
+        top: 13.5rem;
+        left: -15.5%;
+      }
+    }
+
+    &--contact {
+      top: 17.1rem;
+      left: -8.1%;
+
+      @include mixins.respond(laptop) {
+        left: -12.9%;
+      }
+
+      @include mixins.respond(tablet) {
+        top: 16.3rem;
+        left: -19.3%;
+      }
+    }
+
+    & hr {
+      border: 0;
+      background-color: var(--light-grey);
+      height: 1px;
+      width: 10.4rem;
+    }
+
+    & span {
+      letter-spacing: 18px;
+      line-height: 1;
+    }
+
+    @include mixins.respond(phone-lg) {
+      display: none;
+    }
+  }
+}

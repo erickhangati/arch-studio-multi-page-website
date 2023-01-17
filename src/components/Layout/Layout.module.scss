@@ -1,0 +1,9 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.layout {
+  padding: 0 11%;
+
+  @include mixins.respond(phone-lg) {
+    padding: 0;
+  }
+}
