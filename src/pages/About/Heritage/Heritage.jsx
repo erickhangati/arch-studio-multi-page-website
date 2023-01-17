@@ -1,5 +1,7 @@
 import React from "react";
 
+import heritageImage from "../../../assets/images/about/image-heritage.jpg";
+
 import styles from "./Heritage.module.scss";
 
 const Heritage = () => {
@@ -26,7 +28,7 @@ const Heritage = () => {
           </p>
         </div>
       </div>
-      <img src="/src/assets/images/about/image-heritage.jpg" alt="heritage" />
+      <img src={heritageImage} alt="heritage" />
     </section>
   );
 };

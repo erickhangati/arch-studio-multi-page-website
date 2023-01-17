@@ -1,5 +1,7 @@
 import React from "react";
 
+import welcomeImage from "../../../assets/images/image-welcome.jpg";
+
 import styles from "./Welcome.module.scss";
 
 const Welcome = () => {
@@ -29,7 +31,7 @@ const Welcome = () => {
             </p>
           </div>
         </div>
-        <img src="/src/assets/images/image-welcome.jpg" />
+        <img src={welcomeImage} alt="welcome image" />
       </div>
     </section>
   );
