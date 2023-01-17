@@ -1,8 +1,8 @@
 // Card Details.
 
-import card1Image from "../../../assets/images/Portfolio/image-del-sol.jpg";
-import card2Image from "../../../assets/images/Portfolio/image-228b.jpg";
-import card3Image from "../../../assets/images/Portfolio/image-prototype.jpg";
+import card1Image from "../../../assets/images/portfolio/image-del-sol.jpg";
+import card2Image from "../../../assets/images/portfolio/image-228b.jpg";
+import card3Image from "../../../assets/images/portfolio/image-prototype.jpg";
 
 const cardDetails = [
   {
