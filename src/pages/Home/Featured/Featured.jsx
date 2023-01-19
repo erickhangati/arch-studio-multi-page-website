@@ -13,9 +13,7 @@ const Featured = () => {
       {/* Render Featured Heading */}
       <div className={styles["featured__heading"]}>
         <h3>Featured</h3>
-        <Link to="/portfolio">
-          <Button>See All</Button>
-        </Link>
+        <Button to="/portfolio">See All</Button>
       </div>
 
       {/* Render Featured Cards by looping cardDetails*/}

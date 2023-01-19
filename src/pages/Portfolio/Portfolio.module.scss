@@ -10,7 +10,7 @@
     row-gap: 2.4rem;
   }
 
-  @include mixins.respond(phone-lg) {
+  @include mixins.respond(tablet-sm) {
     padding: 0 8.5%;
   }
 

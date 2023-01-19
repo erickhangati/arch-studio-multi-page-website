@@ -6,23 +6,11 @@
 
   &__image {
     width: 100%;
-    height: 30.28rem;
+    height: auto;
     position: relative;
 
     & img {
       width: 100%;
-    }
-
-    @include mixins.respond(laptop) {
-      height: 22.258rem;
-    }
-
-    @include mixins.respond(tablet) {
-      height: 25.406rem;
-    }
-
-    @include mixins.respond(phone-lg) {
-      height: 31.494rem;
     }
   }
 

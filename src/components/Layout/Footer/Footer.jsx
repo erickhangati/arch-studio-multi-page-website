@@ -19,33 +19,37 @@ const Footer = () => {
       {/* Render Footer Navigation Links. */}
       <nav className={styles["footer__nav"]}>
         <ul>
-          <NavLink
-            to="/portfolio"
-            className={(navData) => (navData.isActive ? styles.active : "")}
-          >
-            <li>Portfolio</li>
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className={(navData) => (navData.isActive ? styles.active : "")}
-          >
-            <li>About</li>
-          </NavLink>
-
-          <NavLink
-            to="/contact"
-            className={(navData) => (navData.isActive ? styles.active : "")}
-          >
-            <li>Contact</li>
-          </NavLink>
+          <li>
+            <NavLink
+              to="/portfolio"
+              className={(navData) => (navData.isActive ? styles.active : "")}
+            >
+              Portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={(navData) => (navData.isActive ? styles.active : "")}
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={(navData) => (navData.isActive ? styles.active : "")}
+            >
+              Contact
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
       {/* Render Footer Portfolio Button */}
-      <Link to="/portfolio">
-        <Button>See Our Portfolio</Button>
-      </Link>
+      <Button to="/portfolio" className={styles["footer__button"]}>
+        See Our Portfolio
+      </Button>
     </footer>
   );
 };

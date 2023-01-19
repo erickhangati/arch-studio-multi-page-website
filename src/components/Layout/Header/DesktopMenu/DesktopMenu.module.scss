@@ -1,7 +1,7 @@
 @use "../../../../styles/mixins.scss" as mixins;
 
 .desktop-menu {
-  @include mixins.respond(phone-lg) {
+  @include mixins.respond(tablet-sm) {
     display: none;
   }
 
@@ -26,7 +26,7 @@
     }
   }
 
-  & a.active li {
+  & li a.active {
     color: var(--very-dark-blue);
   }
 }

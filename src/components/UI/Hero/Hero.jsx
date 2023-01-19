@@ -8,6 +8,10 @@ const Hero = (props) => {
     props.className ? ` ${props.className}` : ""
   }`;
 
+  const descriptionClasses = `${styles["hero__description"]}${
+    props.descriptionClass ? ` ${props.descriptionClass}` : ""
+  }`;
+
   const textClasses = `${styles["hero__text"]}${
     props.textClass ? ` ${props.textClass}` : ""
   }`;
@@ -19,7 +23,7 @@ const Hero = (props) => {
   return (
     <section className={classes}>
       <div className={heroImageClasses}></div>
-      <div className={styles["hero__description"]}>
+      <div className={descriptionClasses}>
         <h1>{props.heading}</h1>
         <hr />
         <div className={textClasses}>

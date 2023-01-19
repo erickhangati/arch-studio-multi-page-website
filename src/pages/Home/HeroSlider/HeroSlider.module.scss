@@ -17,13 +17,28 @@
     padding: 18.6rem 5.8rem 17.9rem 5.8rem;
   }
 
+  @include mixins.respond(tablet-sm) {
+    padding: 11.6rem 8.5% 17.9rem 8.5%;
+    height: 60rem;
+  }
+
   @include mixins.respond(phone-lg) {
-    padding: 8rem 3.2rem 11rem 3.2rem;
+    padding: 8rem 8.5% 11rem 8.5%;
     height: 56rem;
   }
 
   & h2 {
     color: white;
+
+    @include mixins.respond(tablet-md) {
+      font-size: 7.6rem;
+      line-height: 6.8rem;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      font-size: 6.6rem;
+      line-height: 6rem;
+    }
 
     @include mixins.respond(phone-lg) {
       font-size: 4.8rem;
@@ -35,7 +50,7 @@
     margin-top: 1rem;
   }
 
-  & button {
+  & a {
     margin-top: 4rem;
 
     &.active {
@@ -51,7 +66,7 @@
 
     display: flex;
 
-    @include mixins.respond(phone-lg) {
+    @include mixins.respond(tablet-sm) {
       left: 50%;
       transform: translateX(-50%);
     }

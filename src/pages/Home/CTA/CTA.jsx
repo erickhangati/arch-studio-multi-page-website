@@ -8,9 +8,7 @@ const CTA = () => {
     <section className={styles.cta}>
       <div>
         <h3>Small team, big ideas.</h3>
-        <Link to="/about">
-          <Button>About Us</Button>
-        </Link>
+        <Button to="/about">About Us</Button>
       </div>
     </section>
   );

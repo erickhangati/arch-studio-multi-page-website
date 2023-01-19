@@ -16,7 +16,7 @@
     grid-template-columns: 1fr;
   }
 
-  @include mixins.respond(phone-lg) {
+  @include mixins.respond(tablet-sm) {
     padding: 0 8.5%;
     margin-top: 7.6rem;
   }

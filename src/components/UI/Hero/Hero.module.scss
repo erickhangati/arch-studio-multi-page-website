@@ -28,7 +28,7 @@
   }
 
   &__description {
-    width: 75.3rem;
+    width: 67.8%;
     height: 50.3rem;
     background-color: white;
     position: absolute;
@@ -36,12 +36,22 @@
     left: 33.5%;
 
     @include mixins.respond(laptop) {
-      width: 62rem;
+      width: 55.86%;
     }
 
     @include mixins.respond(tablet) {
-      width: 57.2rem;
-      left: 5.8rem;
+      width: 80.53%;
+      left: 11.8rem;
+    }
+
+    @include mixins.respond(tablet-md) {
+      width: 94.53%;
+      left: 2.8rem;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      width: 94%;
+      left: 2.8rem;
     }
 
     @include mixins.respond(phone-lg) {
@@ -57,14 +67,26 @@
       top: -9rem;
       left: -2rem;
 
+      @include mixins.respond(desktop) {
+        font-size: 23rem;
+      }
+
       @include mixins.respond(laptop) {
-        font-size: 22rem;
+        font-size: 21rem;
+      }
+
+      @include mixins.respond(laptop-sm) {
+        font-size: 18rem;
       }
 
       @include mixins.respond(tablet) {
-        font-size: 12rem;
-        left: unset;
+        font-size: 15.5rem;
+        left: 1rem;
         right: 5rem;
+      }
+
+      @include mixins.respond(tablet-sm) {
+        font-size: 14.5rem;
       }
 
       @include mixins.respond(phone-lg) {
@@ -78,17 +100,22 @@
       border: none;
       width: 8rem;
       height: 1px;
-      display: none;
+      top: 13.5rem;
+      left: 15.5rem;
 
       @include mixins.respond(laptop) {
         display: block;
         top: 13.5rem;
-        left: 11.5rem;
+        left: 6.5rem;
+      }
+
+      @include mixins.respond(laptop-md) {
+        left: 4.5rem;
       }
 
       @include mixins.respond(tablet) {
         top: 12rem;
-        left: 9.2rem;
+        left: 6.2rem;
       }
 
       @include mixins.respond(phone-lg) {
@@ -108,6 +135,27 @@
     flex-direction: column;
     gap: 5.4rem;
 
+    @include mixins.respond(desktop) {
+      transform: translateX(-40%);
+    }
+
+    @include mixins.respond(laptop-sm) {
+      transform: translateX(-34%);
+    }
+
+    @include mixins.respond(tablet) {
+      transform: translateX(-43%);
+    }
+
+    @include mixins.respond(tablet-md) {
+      transform: translateX(-45%);
+    }
+
+    @include mixins.respond(tablet-sm) {
+      max-width: 32rem;
+      transform: translateX(-50%);
+    }
+
     @include mixins.respond(phone-lg) {
       bottom: unset;
       top: 6rem;
@@ -117,6 +165,11 @@
     }
 
     & h3 {
+      @include mixins.respond(tablet-sm) {
+        font-size: 5.2rem;
+        line-height: 5.4rem;
+      }
+
       @include mixins.respond(phone-lg) {
         font-size: 4.8rem;
         line-height: 5.2rem;

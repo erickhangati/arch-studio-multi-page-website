@@ -1,9 +1,10 @@
 @use "../../styles/mixins.scss" as mixins;
 
 .layout {
+  width: 100%;
   padding: 0 11%;
 
-  @include mixins.respond(phone-lg) {
+  @include mixins.respond(tablet-sm) {
     padding: 0;
   }
 }

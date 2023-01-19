@@ -18,10 +18,14 @@
     margin-top: 14rem;
   }
 
-  @include mixins.respond(phone-lg) {
-    margin-top: 4rem;
+  @include mixins.respond(tablet-sm) {
+    margin-top: 10rem;
     padding: 0 8.5%;
     row-gap: 5.2rem;
+  }
+
+  @include mixins.respond(phone-lg) {
+    margin-top: 7rem;
   }
 
   & hr {

@@ -24,6 +24,7 @@ const Contact = () => {
         className={styles.hero}
         heroImageClass={styles["hero__image"]}
         textClass={styles["hero__text"]}
+        descriptionClass={styles["hero__description"]}
       />
 
       {/* Render Contact Details */}

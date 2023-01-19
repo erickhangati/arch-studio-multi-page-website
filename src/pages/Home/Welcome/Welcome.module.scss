@@ -11,7 +11,7 @@
     margin-top: 4.2rem;
   }
 
-  @include mixins.respond(phone-lg) {
+  @include mixins.respond(tablet-sm) {
     margin-top: 10rem;
     padding: 0 8.5%;
   }
@@ -20,13 +20,25 @@
     z-index: 10;
     position: relative;
 
+    @include mixins.respond(desktop) {
+      font-size: 20rem;
+    }
+
     @include mixins.respond(laptop) {
       font-size: 18rem;
     }
 
+    @include mixins.respond(laptop-sm) {
+      font-size: 16rem;
+      line-height: 15rem;
+    }
+
     @include mixins.respond(tablet) {
       font-size: 12rem;
-      font-weight: 500;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      font-size: 9rem;
     }
 
     @include mixins.respond(phone-lg) {
@@ -40,9 +52,18 @@
     justify-content: flex-end;
     gap: 12.5rem;
 
+    @include mixins.respond(desktop) {
+      margin-top: -4.5rem;
+    }
+
     @include mixins.respond(laptop) {
       gap: 8rem;
-      margin-top: -8.5rem;
+      margin-top: -5.5rem;
+    }
+
+    @include mixins.respond(laptop-sm) {
+      gap: 4rem;
+      margin-top: -3.5rem;
     }
 
     @include mixins.respond(tablet) {
@@ -73,9 +94,17 @@
     }
 
     & h3 {
+      @include mixins.respond(desktop) {
+        font-size: 6.2rem;
+      }
+
       @include mixins.respond(laptop) {
         font-size: 6rem;
         line-height: 5.5rem;
+      }
+
+      @include mixins.respond(laptop-md) {
+        font-size: 5.8rem;
       }
 
       @include mixins.respond(phone-lg) {

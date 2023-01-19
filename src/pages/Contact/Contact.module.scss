@@ -4,20 +4,43 @@
   & h1 {
     left: -20rem;
 
+    @include mixins.respond(laptop-sm) {
+      left: -8rem;
+    }
+
     @include mixins.respond(tablet) {
-      left: 15rem;
+      left: -8rem;
+    }
+
+    @include mixins.respond(tablet-md) {
+      font-size: 13.5rem;
+      left: -6rem;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      font-size: 11.5rem;
+      left: 0;
     }
   }
 
   & hr {
+    left: 20.5rem;
+
+    @include mixins.respond(desktop) {
+      left: 11.5rem;
+    }
+
     @include mixins.respond(laptop) {
       left: 6.5rem;
     }
 
-    @include mixins.respond(tablet) {
-      top: 8rem;
+    @include mixins.respond(laptop-md) {
       left: 5.5rem;
-      display: none;
+    }
+
+    @include mixins.respond(tablet) {
+      top: 13rem;
+      left: 4.5rem;
     }
   }
 
@@ -26,13 +49,73 @@
       url("/src/assets/images/contact/image-hero.jpg");
   }
 
-  &__text {
+  &__description {
+    width: 79%;
+
     @include mixins.respond(laptop) {
-      left: 40%;
+      width: 86.86%;
+    }
+
+    @include mixins.respond(laptop-sm) {
+      left: 18.5%;
+      width: 92.86%;
+    }
+
+    @include mixins.respond(tablet-md) {
+      left: 15.5%;
+      width: 98.86%;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      left: 11.5%;
+      width: 88.5%;
     }
 
     @include mixins.respond(phone-lg) {
-      left: 49%;
+      left: 0;
+    }
+  }
+
+  &__text {
+    @include mixins.respond(desktop) {
+      left: 40%;
+    }
+
+    @include mixins.respond(laptop) {
+      transform: translateX(-50%);
+    }
+
+    @include mixins.respond(laptop-md) {
+      transform: translateX(-42%);
+      left: 36%;
+    }
+
+    @include mixins.respond(laptop-sm) {
+      transform: translateX(-34%);
+      left: 32%;
+    }
+
+    @include mixins.respond(laptop-sm) {
+      transform: translateX(-13%);
+      left: 18%;
+    }
+
+    @include mixins.respond(phone-lg) {
+      transform: translateX(0%);
+      padding: 0;
+      left: 8.5%;
+      padding-right: 2rem;
+    }
+  }
+
+  & h3 {
+    @include mixins.respond(tablet-md) {
+      font-size: 6.2rem;
+    }
+
+    @include mixins.respond(phone-lg) {
+      font-size: 4.8rem;
+      line-height: 5.2rem;
     }
   }
 }

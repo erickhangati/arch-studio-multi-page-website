@@ -8,17 +8,17 @@ const MenuModalOverlay = ({ hideMobileMenu }) => {
     <div className={styles.overlay}>
       <nav className={styles["overlay__modal"]}>
         <ul>
-          <Link to="/portfolio">
-            <li onClick={hideMobileMenu}>Portfolio</li>
-          </Link>
+          <li onClick={hideMobileMenu}>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
 
-          <Link to="/about">
-            <li onClick={hideMobileMenu}>About</li>
-          </Link>
+          <li onClick={hideMobileMenu}>
+            <Link to="/about">About</Link>
+          </li>
 
-          <Link to="/contact">
-            <li onClick={hideMobileMenu}>Contact</li>
-          </Link>
+          <li onClick={hideMobileMenu}>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </nav>
     </div>

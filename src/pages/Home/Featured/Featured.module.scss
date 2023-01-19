@@ -16,7 +16,7 @@
     margin-top: 13rem;
   }
 
-  @include mixins.respond(phone-lg) {
+  @include mixins.respond(tablet-sm) {
     margin-top: 7.3rem;
     padding: 0 8.5%;
     gap: 2.4rem;
@@ -28,7 +28,7 @@
     justify-content: space-between;
 
     & h3 {
-      @include mixins.respond(phone-lg) {
+      @include mixins.respond(tablet-sm) {
         font-size: 4.8rem;
       }
     }
@@ -44,6 +44,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
+
+    @include mixins.respond(laptop-md) {
+      column-gap: 2rem;
+    }
 
     @include mixins.respond(tablet) {
       margin-top: 2rem;

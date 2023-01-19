@@ -12,8 +12,8 @@
     gap: 8rem;
   }
 
-  @include mixins.respond(phone-lg) {
-    padding: 3.2rem;
+  @include mixins.respond(tablet-sm) {
+    padding: 3.2rem 11%;
     justify-content: space-between;
   }
 
@@ -34,8 +34,20 @@
       top: 13rem;
       left: -5.1%;
 
+      @include mixins.respond(desktop) {
+        left: -7%;
+      }
+
       @include mixins.respond(laptop) {
         left: -8.8%;
+      }
+
+      @include mixins.respond(laptop-md) {
+        left: -10.4%;
+      }
+
+      @include mixins.respond(laptop-sm) {
+        left: -12%;
       }
 
       @include mixins.respond(tablet) {
@@ -48,8 +60,20 @@
       top: 19.5rem;
       left: -10%;
 
+      @include mixins.respond(desktop) {
+        left: -13%;
+      }
+
       @include mixins.respond(laptop) {
         left: -15.3%;
+      }
+
+      @include mixins.respond(laptop-md) {
+        left: -18.3%;
+      }
+
+      @include mixins.respond(laptop-sm) {
+        left: -20.3%;
       }
 
       @include mixins.respond(tablet) {
@@ -62,13 +86,25 @@
       top: 14.2rem;
       left: -6%;
 
+      @include mixins.respond(desktop) {
+        left: -8.1%;
+      }
+
       @include mixins.respond(laptop) {
         left: -10.1%;
       }
 
+      @include mixins.respond(laptop-md) {
+        left: -12.1%;
+      }
+
+      @include mixins.respond(laptop-sm) {
+        left: -14.1%;
+      }
+
       @include mixins.respond(tablet) {
         top: 13.5rem;
-        left: -15.5%;
+        left: -16.5%;
       }
     }
 
@@ -76,8 +112,16 @@
       top: 17.1rem;
       left: -8.1%;
 
+      @include mixins.respond(desktop) {
+        left: -10.9%;
+      }
+
       @include mixins.respond(laptop) {
         left: -12.9%;
+      }
+
+      @include mixins.respond(laptop-md) {
+        left: -16%;
       }
 
       @include mixins.respond(tablet) {
@@ -98,7 +142,7 @@
       line-height: 1;
     }
 
-    @include mixins.respond(phone-lg) {
+    @include mixins.respond(tablet-md) {
       display: none;
     }
   }

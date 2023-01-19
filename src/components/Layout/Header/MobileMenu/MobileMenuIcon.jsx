@@ -10,22 +10,10 @@ const MobileMenuIcon = ({ onClick }) => {
       xmlns="http://www.w3.org/2000/svg"
       onClick={onClick}
     >
-      <g id="Group">
-        <rect id="Rectangle" width="24" height="3" fill="#1B1D23" />
-        <rect
-          id="Rectangle Copy 2"
-          y="7"
-          width="24"
-          height="3"
-          fill="#1B1D23"
-        />
-        <rect
-          id="Rectangle Copy 3"
-          y="14"
-          width="24"
-          height="3"
-          fill="#1B1D23"
-        />
+      <g>
+        <rect width="24" height="3" fill="#1B1D23" />
+        <rect y="7" width="24" height="3" fill="#1B1D23" />
+        <rect y="14" width="24" height="3" fill="#1B1D23" />
       </g>
     </svg>
   );

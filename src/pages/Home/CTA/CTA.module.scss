@@ -21,6 +21,13 @@
     margin-top: 12rem;
   }
 
+  @include mixins.respond(tablet-sm) {
+    margin-top: 10rem;
+    height: 46rem;
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+  }
+
   @include mixins.respond(phone-lg) {
     padding-top: 18.1rem;
     padding-left: 3.2rem;
@@ -28,7 +35,7 @@
   }
 
   & div {
-    width: 44.5rem;
+    max-width: 44.5rem;
     height: 22.5rem;
 
     display: flex;
@@ -43,6 +50,11 @@
 
   & h3 {
     color: white;
+
+    @include mixins.respond(tablet-sm) {
+      font-size: 5rem;
+      line-height: 5.4rem;
+    }
 
     @include mixins.respond(phone-lg) {
       font-size: 4.8rem;

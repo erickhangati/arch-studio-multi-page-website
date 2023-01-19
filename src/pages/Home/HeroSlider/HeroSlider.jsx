@@ -23,6 +23,8 @@ const HeroSlider = ({ activeSlider, setActiveSlider }) => {
       // Setting background image dynamically from featuredItem.
       style={{
         background: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${slider.backgroundImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
       {/* Slider Heading */}
@@ -32,9 +34,7 @@ const HeroSlider = ({ activeSlider, setActiveSlider }) => {
       <p>{slider.description}</p>
 
       {/* Slider Button */}
-      <Link to="/portfolio">
-        <Button>See Our Portfolio</Button>
-      </Link>
+      <Button to="/portfolio">See Our Portfolio</Button>
 
       {/* Slider Navigation Butons */}
       <div className={styles["sliders__buttons"]}>

@@ -8,26 +8,32 @@ const DesktopMenu = () => {
   return (
     <nav className={styles["desktop-menu"]}>
       <ul>
-        <NavLink
-          to="/portfolio"
-          className={(navData) => (navData.isActive ? styles.active : "")}
-        >
-          <li>Portfolio</li>
-        </NavLink>
+        <li>
+          <NavLink
+            to="/portfolio"
+            className={(navData) => (navData.isActive ? styles.active : "")}
+          >
+            Portfolio
+          </NavLink>
+        </li>
 
-        <NavLink
-          to="/about"
-          className={(navData) => (navData.isActive ? styles.active : "")}
-        >
-          <li>About</li>
-        </NavLink>
+        <li>
+          <NavLink
+            to="/about"
+            className={(navData) => (navData.isActive ? styles.active : "")}
+          >
+            About
+          </NavLink>
+        </li>
 
-        <NavLink
-          to="/contact"
-          className={(navData) => (navData.isActive ? styles.active : "")}
-        >
-          <li>Contact</li>
-        </NavLink>
+        <li>
+          <NavLink
+            to="/contact"
+            className={(navData) => (navData.isActive ? styles.active : "")}
+          >
+            Contact
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

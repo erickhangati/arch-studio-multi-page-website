@@ -2,7 +2,6 @@
 
 .footer {
   width: 78%;
-  height: 20rem;
   margin: 0 auto;
   margin-top: 20rem;
   background: linear-gradient(to right, var(--very-light-grey) 90%, white 10%);
@@ -10,24 +9,32 @@
   display: flex;
   align-items: center;
 
+  @include mixins.respond(desktop) {
+    width: 88%;
+  }
+
   @include mixins.respond(laptop) {
     width: 90%;
-    height: 14rem;
     margin-top: 14rem;
   }
 
-  @include mixins.respond(tablet) {
+  @include mixins.respond(laptop-sm) {
     width: 100%;
-    height: 12rem;
+  }
+
+  @include mixins.respond(tablet) {
     margin-top: 12rem;
+  }
+
+  @include mixins.respond(tablet-sm) {
+    width: 100%;
+    flex-direction: column;
+    background: linear-gradient(to top, var(--very-light-grey) 81%, white 19%);
+    padding: 4rem;
   }
 
   @include mixins.respond(phone-lg) {
     margin-top: 7.2rem;
-    padding: 4rem;
-    height: auto;
-    flex-direction: column;
-    background: linear-gradient(to top, var(--very-light-grey) 80%, white 20%);
   }
 
   &__logo {
@@ -54,9 +61,26 @@
       height: 14rem;
     }
 
-    @include mixins.respond(tablet) {
+    @include mixins.respond(laptop-md) {
       width: 12rem;
       height: 12rem;
+    }
+
+    @include mixins.respond(tablet-md) {
+      width: 8.6rem;
+      height: 8.6rem;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    & svg {
+      @include mixins.respond(laptop-md) {
+        width: 7rem;
+        height: auto;
+      }
     }
   }
 
@@ -66,13 +90,25 @@
     align-items: center;
     margin-right: auto;
 
-    @include mixins.respond(tablet) {
-      padding: 0 4rem;
+    @include mixins.respond(laptop) {
+      padding: 0 7.5rem;
     }
 
-    @include mixins.respond(phone-lg) {
-      padding: 3.2rem;
-      margin: 0;
+    @include mixins.respond(laptop-md) {
+      padding: 0 4.5rem;
+    }
+
+    @include mixins.respond(tablet) {
+      padding: 3.4rem;
+    }
+
+    @include mixins.respond(tablet-md) {
+      padding: 2.4rem;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      padding: 5.2rem;
+      margin-right: unset;
     }
   }
 
@@ -87,22 +123,41 @@
     align-items: center;
     gap: 6rem;
 
-    & a li {
+    @include mixins.respond(tablet) {
+      gap: 3.6rem;
+    }
+
+    @include mixins.respond(tablet-md) {
+      gap: 2rem;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      gap: 4rem;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    & li a {
       transition: all 0.3s;
     }
 
-    & a li:hover,
-    & a.active li {
+    & li:hover a,
+    & li a.active {
       color: var(--very-dark-blue);
-    }
-
-    @include mixins.respond(phone-lg) {
-      flex-direction: column;
-      justify-content: center;
     }
   }
 
   & li {
     color: var(--medium-grey);
+  }
+
+  &__button {
+    @include mixins.respond(tablet) {
+      padding: 1.8rem;
+    }
+
+    @include mixins.respond(tablet-sm) {
+      padding: 2.6rem;
+    }
   }
 }

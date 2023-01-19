@@ -3,7 +3,7 @@
 .mobile-menu {
   display: none;
 
-  @include mixins.respond(phone-lg) {
+  @include mixins.respond(tablet-sm) {
     display: inline-block;
   }
 }
