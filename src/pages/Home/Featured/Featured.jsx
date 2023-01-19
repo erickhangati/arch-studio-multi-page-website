@@ -28,9 +28,9 @@ const Featured = () => {
       </div>
 
       {/* Render button on mobile devices */}
-      <Link to="/portfolio" className={styles["featured__mobile-button"]}>
-        <Button>See All</Button>
-      </Link>
+      <Button to="/portfolio" className={styles["featured__mobile-button"]}>
+        See All
+      </Button>
     </section>
   );
 };

@@ -33,8 +33,8 @@
       }
     }
 
-    & button {
-      @include mixins.respond(phone-lg) {
+    & a {
+      @include mixins.respond(tablet-sm) {
         display: none;
       }
     }
@@ -63,12 +63,9 @@
   &__mobile-button {
     display: none;
 
-    & button {
+    @include mixins.respond(tablet-sm) {
+      display: flex;
       width: 100%;
-    }
-
-    @include mixins.respond(phone-lg) {
-      display: inline-block;
     }
   }
 }

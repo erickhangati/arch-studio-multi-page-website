@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Button from "../../../components/UI/Button/Button";
 import NumberButton from "../../../components/UI/NumberButton/NumberButton";
