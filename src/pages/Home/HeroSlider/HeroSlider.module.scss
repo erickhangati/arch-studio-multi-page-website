@@ -70,5 +70,12 @@
       left: 50%;
       transform: translateX(-50%);
     }
+
+    button {
+      &.active {
+        background-color: var(--very-dark-blue);
+        color: white;
+      }
+    }
   }
 }
